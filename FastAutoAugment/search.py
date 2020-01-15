@@ -161,7 +161,7 @@ if __name__ == '__main__':
     logger.info('configuration...')
     logger.info(json.dumps(C.get().conf, sort_keys=True, indent=4))
     logger.info('initialize ray...')
-    ray.init(redis_address=args.redis, temp_dir=blah)
+    ray.init(redis_address=args.redis, temp_dir='blah')
 
     num_result_per_cv = 10
     cv_num = 5
